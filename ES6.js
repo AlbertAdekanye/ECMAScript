@@ -40,3 +40,6 @@ function freezeObj(){
 }
 const PI = freezeObj();
 console.log(PI);
+
+// we use arrow functions to write anonymous functions
+const magic =() => new Date();

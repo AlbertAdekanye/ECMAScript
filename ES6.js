@@ -148,3 +148,39 @@ const bicycle = {
   }
 };
 console.log(bicycle.setGear(3));
+
+// Use class Syntax to Define a Constructor Function
+class Vegetable {
+    constructor(name){
+        this.name = name;
+    }
+}
+const carrot = new Vegetable('carrot');
+console.log(carrot.name);
+
+class ea {
+    constructor(name){
+        this.name = name;
+    }
+}
+const electronicArts = new ea('electronic arts');
+console.log(electronicArts.name);
+
+
+class Thermostat {
+    constructor(fahrenheit){
+        this.fahrenheit = fahrenheit;
+    }
+    get temperature(){
+        return 5 / 9 * (this.fahrenheit - 32);
+    }
+    set temperature(celsius){
+        this.fahrenheit = celsius * 9.0 / 5 + 32;
+    }
+}
+const thermos = new Thermostat(76);
+let temp = thermos.temperature;
+console.log(temp);
+thermos.temperature = 26;   
+temp = thermos.temperature;
+console.log(temp);

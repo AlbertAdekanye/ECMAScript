@@ -138,3 +138,13 @@ console.log(failuresList);
 // Write Concise Object Literal Declarations Using Object Property Shorthand
 const createPerson = (name, age, gender) => ({name, age, gender});
 console.log(createPerson())
+
+// write concise declarative functions
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    "use strict";
+    this.gear = newGear;
+  }
+};
+console.log(bicycle.setGear(3));

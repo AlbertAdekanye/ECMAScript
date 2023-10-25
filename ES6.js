@@ -83,7 +83,7 @@ const HIGH_TEMPERATURES = {
     today: 77,
     tomorrow: 80,
 }
-const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
+// const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
 console.log(highToday, highTomorrow);
 
 // Use Destructuring Assignment to Assign Variables from Nested Objects
@@ -94,4 +94,15 @@ const LOCAL_FORECAST = {
 const {today: {low: lowToday, high: highToday}} = LOCAL_FORECAST;
 console.log(lowToday, highToday);
 
-// 
+// Use Destructuring Assignment to Assign Variables from Arrays
+let a = 8, b = 6;
+[a, b] = [b, a];
+console.log(a, b);
+
+// Destructuring via rest elements
+function removeFirstTwo(list){
+    const [ , , ...arr] = list;
+    return arr;
+}
+const arr = [1, 2, 3, 4, 5, 6, 7];
+console.log(removeFirstTwo(arr));

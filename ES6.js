@@ -69,10 +69,19 @@ arr2 = [...arr1];
 console.log(arr2);
 
 // Use Destructuring Assignment to Extract Values from Objects
-const HIGH_TEMPERATURES = {
+const HIGH_TEMPERATURES1 = {
     yesterday: 75,
     today: 77,
     tomorrow: 80,
 }
 const {today, tomorrow, yesterday} = HIGH_TEMPERATURES;
 console.log(today, tomorrow, yesterday);
+
+// Use Destructuring Assignment to Assign Variables from Objects
+const HIGH_TEMPERATURES = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80,
+}
+const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
+console.log(highToday, highTomorrow);

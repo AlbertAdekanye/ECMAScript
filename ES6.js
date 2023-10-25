@@ -51,3 +51,19 @@ console.log(myConcat([1, 2], [3, 4, 5]));
 // we can write arrow functions with default parameters
 const increment = (number, value = 1) => number + value;
 console.log(increment(5, 2));
+
+const greeting = (name = "Anonymous") => "Hello " + name;
+console.log(greeting("Albert"));
+console.log(greeting());
+
+// Use the Rest Parameter with Function Parameters
+const sum = (...args) => {
+    return args.reduce((a, b) => a + b, 0);
+}
+console.log(sum(1, 2, 3, 4));
+
+// Use the Spread Operator to Evaluate Arrays In-Place
+const arr1 = ['jan', 'feb', 'mar', 'apr', 'may'];
+let arr2;
+arr2 = [...arr1];
+console.log(arr2);

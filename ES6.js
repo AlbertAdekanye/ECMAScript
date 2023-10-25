@@ -67,3 +67,12 @@ const arr1 = ['jan', 'feb', 'mar', 'apr', 'may'];
 let arr2;
 arr2 = [...arr1];
 console.log(arr2);
+
+// Use Destructuring Assignment to Extract Values from Objects
+const HIGH_TEMPERATURES = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80,
+}
+const {today, tomorrow, yesterday} = HIGH_TEMPERATURES;
+console.log(today, tomorrow, yesterday);
